@@ -24,7 +24,6 @@ venv.bak/
 
 # Project-specific output directories
 submission/frames/
-submission/landmarks/
 submission/output_videos/
 submission/outputs/
 submission/videos/
