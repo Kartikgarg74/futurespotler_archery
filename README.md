@@ -1,4 +1,4 @@
-# FutureSportler Archery Analysis Project
+# Archery Posture Analysis and Feedback System
 
 ## Project Purpose
 This project aims to provide an automated system for analyzing archery posture and providing feedback. It processes video footage of archers, extracts key pose landmarks, analyzes their movements, and generates visual feedback to help improve technique.
@@ -20,11 +20,11 @@ Additionally, the project was enhanced to include a scoring system for movement 
 -   **Python's `os` and `json` modules**: For file system operations and handling pose data.
 
 ## How the Pipeline Works
-The core of the project is orchestrated by `main.py`, which integrates functionalities from other modules:
-1.  **`video_utils.py`**: Handles the extraction of individual frames from input videos.
-2.  **`pose_estimator.py`**: Detects pose landmarks on each extracted frame and saves them as JSON files. It also includes functionality to convert these JSON pose data into CSV files for each video, located in `outputs/csv_landmarks/`.
-3.  **`feedback_analyzer.py`**: Processes the pose data to calculate angles (e.g., elbow angles), analyze posture, and generate textual feedback. It also calculates consistency and symmetry scores for key body parts.
-4.  **`visualizer.py`**: Overlays the detected landmarks and the generated feedback text onto the original video frames, creating a new video with visual corrections and insights.
+The core of the project is orchestrated by <mcfile name="main.py" path="submission/src/main.py"></mcfile>, which integrates functionalities from other modules:
+1.  <mcfile name="video_utils.py" path="submission/src/video_utils.py"></mcfile>: Handles the extraction of individual frames from input videos.
+2.  <mcfile name="pose_estimator.py" path="submission/src/pose_estimator.py"></mcfile>: Detects pose landmarks on each extracted frame and saves them as JSON files. It also includes functionality to convert these JSON pose data into CSV files for each video, located in `submission/landmarks/csv_landmarks/`.
+3.  <mcfile name="feedback_analyzer.py" path="submission/src/feedback_analyzer.py"></mcfile>: Processes the pose data to calculate angles (e.g., elbow angles), analyze posture, and generate textual feedback. It now includes comprehensive analysis for the **stance phase**, evaluating body alignment (shoulders, hips, ankles) and foot placement. It also calculates consistency and symmetry scores for key body parts.
+4.  <mcfile name="visualizer.py" path="submission/src/visualizer.py"></mcfile>: Overlays the detected landmarks and the generated feedback text onto the original video frames, creating a new video with visual corrections and insights.
 
 ## Instructions to Run the Full Project Locally
 
@@ -57,24 +57,26 @@ The core of the project is orchestrated by `main.py`, which integrates functiona
     ```
 
 ### Running the Pipeline
-To run the entire analysis pipeline, execute the `main.py` script from the project root directory:
+To run the entire analysis pipeline, execute the <mcfile name="main.py" path="submission/src/main.py"></mcfile> script from the project root directory:
 
 ```bash
-python3 src/main.py
+python3 submission/src/main.py
 ```
 
 This script will:
 -   Read videos from the `videos/` directory.
--   Extract frames into the `frames/` directory.
--   Detect poses and save JSON data into the `poses/` directory.
--   Generate CSV files of pose keypoints in `outputs/csv_landmarks/`.
--   Analyze posture and calculate feedback scores.
--   Create feedback videos with overlaid corrections in the `outputs/` directory.
+-   Extract frames into the `submission/frames/` directory.
+-   Detect poses and save JSON data into the `submission/poses/` directory.
+-   Generate CSV files of pose keypoints in `submission/landmarks/csv_landmarks/`.
+-   Analyze posture and calculate feedback scores, including detailed stance analysis.
+-   **Save individual feedback JSON files** for each video in `submission/feedback/`.
+-   Create feedback videos with overlaid corrections in the `submission/output_videos/` directory.
 
 ### Project Submission Includes:
--   **5 Processed Videos**: The `outputs/` directory contains feedback videos for `archery_1.mp4` through `archery_5.mp4`.
--   **Pose Keypoints**: Raw pose landmark data saved as JSON files in `poses/`.
--   **Feedback Scores**: Consistency and symmetry scores for elbow angles are calculated and displayed during the analysis phase.
--   **Optional 3D CSV**: CSV files containing pose keypoint coordinates for each frame, suitable for 3D visualization in tools like Blender, are generated in `outputs/csv_landmarks/`.
+-   **5 Processed Videos**: The `submission/output_videos/` directory contains feedback videos for `archery_1.mp4` through `archery_5.mp4`.
+-   **Pose Keypoints**: Raw pose landmark data saved as JSON files in `submission/poses/`.
+-   **Feedback JSONs**: Individual feedback JSON files for each video are saved in `submission/feedback/`.
+-   **Feedback Scores**: Consistency and symmetry scores for elbow angles and detailed stance analysis are calculated and displayed during the analysis phase.
+-   **Optional 3D CSV**: CSV files containing pose keypoint coordinates for each frame, suitable for 3D visualization in tools like Blender, are generated in `submission/landmarks/csv_landmarks/`.
 
 This project aims to automate and optimize the job search and application process for users by intelligently analyzing resumes, matching them to job postings, and executing applications.
