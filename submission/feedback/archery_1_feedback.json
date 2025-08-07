@@ -1,0 +1,1905 @@
+{
+    "phase_data": {
+        "stance": [
+            [
+                176,
+                176
+            ],
+            [
+                200,
+                201
+            ],
+            [
+                207,
+                208
+            ],
+            [
+                210,
+                210
+            ],
+            [
+                212,
+                219
+            ],
+            [
+                221,
+                221
+            ],
+            [
+                223,
+                223
+            ],
+            [
+                229,
+                229
+            ],
+            [
+                231,
+                237
+            ],
+            [
+                240,
+                240
+            ],
+            [
+                242,
+                242
+            ],
+            [
+                246,
+                246
+            ],
+            [
+                254,
+                287
+            ],
+            [
+                295,
+                299
+            ],
+            [
+                301,
+                301
+            ],
+            [
+                305,
+                305
+            ],
+            [
+                316,
+                353
+            ],
+            [
+                355,
+                355
+            ],
+            [
+                360,
+                360
+            ],
+            [
+                364,
+                366
+            ],
+            [
+                368,
+                371
+            ]
+        ],
+        "setup": [
+            [
+                66,
+                175
+            ],
+            [
+                178,
+                199
+            ],
+            [
+                202,
+                206
+            ],
+            [
+                209,
+                209
+            ],
+            [
+                211,
+                211
+            ],
+            [
+                220,
+                220
+            ],
+            [
+                222,
+                222
+            ],
+            [
+                224,
+                228
+            ],
+            [
+                230,
+                230
+            ],
+            [
+                238,
+                239
+            ],
+            [
+                241,
+                241
+            ],
+            [
+                243,
+                244
+            ],
+            [
+                247,
+                253
+            ],
+            [
+                306,
+                307
+            ],
+            [
+                309,
+                314
+            ]
+        ],
+        "draw": [
+            [
+                245,
+                245
+            ],
+            [
+                288,
+                294
+            ],
+            [
+                300,
+                300
+            ],
+            [
+                372,
+                372
+            ]
+        ],
+        "anchor": [
+            [
+                308,
+                308
+            ]
+        ],
+        "release": [
+            [
+                1,
+                1
+            ],
+            [
+                3,
+                3
+            ],
+            [
+                7,
+                8
+            ],
+            [
+                10,
+                10
+            ],
+            [
+                15,
+                15
+            ],
+            [
+                19,
+                19
+            ],
+            [
+                30,
+                30
+            ],
+            [
+                43,
+                45
+            ],
+            [
+                47,
+                47
+            ],
+            [
+                51,
+                51
+            ],
+            [
+                53,
+                53
+            ],
+            [
+                55,
+                56
+            ],
+            [
+                58,
+                65
+            ],
+            [
+                177,
+                177
+            ],
+            [
+                302,
+                302
+            ],
+            [
+                304,
+                304
+            ],
+            [
+                315,
+                315
+            ],
+            [
+                354,
+                354
+            ],
+            [
+                356,
+                359
+            ],
+            [
+                361,
+                363
+            ],
+            [
+                367,
+                367
+            ]
+        ],
+        "follow_through": [
+            [
+                0,
+                0
+            ],
+            [
+                2,
+                2
+            ],
+            [
+                4,
+                6
+            ],
+            [
+                9,
+                9
+            ],
+            [
+                11,
+                14
+            ],
+            [
+                16,
+                18
+            ],
+            [
+                20,
+                29
+            ],
+            [
+                31,
+                42
+            ],
+            [
+                46,
+                46
+            ],
+            [
+                48,
+                50
+            ],
+            [
+                52,
+                52
+            ],
+            [
+                54,
+                54
+            ],
+            [
+                57,
+                57
+            ],
+            [
+                303,
+                303
+            ]
+        ]
+    },
+    "per_frame_feedback": [
+        [
+            "Phase: Follow_Through",
+            "Body posture remained stable during follow-through."
+        ],
+        [
+            "Phase: Release",
+            "Release appears smooth and controlled.",
+            "Bow hand flinch detected. Max left wrist movement: 0.013 px/frame. Keep the bow hand still."
+        ],
+        [
+            "Phase: Follow_Through",
+            "Body posture remained stable during follow-through."
+        ],
+        [
+            "Phase: Release",
+            "Release appears smooth and controlled.",
+            "Bow hand flinch detected. Max left wrist movement: 0.012 px/frame. Keep the bow hand still."
+        ],
+        [
+            "Phase: Follow_Through",
+            "Body posture remained stable during follow-through."
+        ],
+        [
+            "Phase: Follow_Through",
+            "Body posture remained stable during follow-through."
+        ],
+        [
+            "Phase: Follow_Through",
+            "Body posture remained stable during follow-through."
+        ],
+        [
+            "Phase: Release",
+            "Release appears smooth and controlled.",
+            "Bow hand remained stable during release."
+        ],
+        [
+            "Phase: Release",
+            "Release appears smooth and controlled.",
+            "Bow hand remained stable during release."
+        ],
+        [
+            "Phase: Follow_Through",
+            "Body posture remained stable during follow-through."
+        ],
+        [
+            "Phase: Release",
+            "Release appears smooth and controlled.",
+            "Bow hand remained stable during release."
+        ],
+        [
+            "Phase: Follow_Through",
+            "Body posture remained stable during follow-through."
+        ],
+        [
+            "Phase: Follow_Through",
+            "Body posture remained stable during follow-through."
+        ],
+        [
+            "Phase: Follow_Through",
+            "Body posture remained stable during follow-through."
+        ],
+        [
+            "Phase: Follow_Through",
+            "Body posture remained stable during follow-through."
+        ],
+        [
+            "Phase: Release",
+            "Release appears smooth and controlled.",
+            "Bow hand remained stable during release."
+        ],
+        [
+            "Phase: Follow_Through",
+            "Body posture remained stable during follow-through."
+        ],
+        [
+            "Phase: Follow_Through",
+            "Body posture remained stable during follow-through."
+        ],
+        [
+            "Phase: Follow_Through",
+            "Body posture remained stable during follow-through."
+        ],
+        [
+            "Phase: Release",
+            "Release appears smooth and controlled.",
+            "Bow hand flinch detected. Max left wrist movement: 0.011 px/frame. Keep the bow hand still."
+        ],
+        [
+            "Phase: Follow_Through",
+            "Body posture remained stable during follow-through."
+        ],
+        [
+            "Phase: Follow_Through",
+            "Body posture remained stable during follow-through."
+        ],
+        [
+            "Phase: Follow_Through",
+            "Body posture remained stable during follow-through."
+        ],
+        [
+            "Phase: Follow_Through",
+            "Body posture remained stable during follow-through."
+        ],
+        [
+            "Phase: Follow_Through",
+            "Body posture remained stable during follow-through."
+        ],
+        [
+            "Phase: Follow_Through",
+            "Body posture remained stable during follow-through."
+        ],
+        [
+            "Phase: Follow_Through",
+            "Body posture remained stable during follow-through."
+        ],
+        [
+            "Phase: Follow_Through",
+            "Body posture remained stable during follow-through."
+        ],
+        [
+            "Phase: Follow_Through",
+            "Body posture remained stable during follow-through."
+        ],
+        [
+            "Phase: Follow_Through",
+            "Body posture remained stable during follow-through."
+        ],
+        [
+            "Phase: Release",
+            "Release appears smooth and controlled.",
+            "Bow hand remained stable during release."
+        ],
+        [
+            "Phase: Follow_Through",
+            "Body posture remained stable during follow-through."
+        ],
+        [
+            "Phase: Follow_Through",
+            "Body posture remained stable during follow-through."
+        ],
+        [
+            "Phase: Follow_Through",
+            "Body posture remained stable during follow-through."
+        ],
+        [
+            "Phase: Follow_Through",
+            "Body posture remained stable during follow-through."
+        ],
+        [
+            "Phase: Follow_Through",
+            "Body posture remained stable during follow-through."
+        ],
+        [
+            "Phase: Follow_Through",
+            "Body posture remained stable during follow-through."
+        ],
+        [
+            "Phase: Follow_Through",
+            "Body posture remained stable during follow-through."
+        ],
+        [
+            "Phase: Follow_Through",
+            "Body posture remained stable during follow-through."
+        ],
+        [
+            "Phase: Follow_Through",
+            "Body posture remained stable during follow-through."
+        ],
+        [
+            "Phase: Follow_Through",
+            "Body posture remained stable during follow-through."
+        ],
+        [
+            "Phase: Follow_Through",
+            "Body posture remained stable during follow-through."
+        ],
+        [
+            "Phase: Follow_Through",
+            "Body posture remained stable during follow-through."
+        ],
+        [
+            "Phase: Release",
+            "Release appears smooth and controlled.",
+            "Bow hand flinch detected. Max left wrist movement: 0.034 px/frame. Keep the bow hand still."
+        ],
+        [
+            "Phase: Release",
+            "Release appears smooth and controlled.",
+            "Bow hand flinch detected. Max left wrist movement: 0.034 px/frame. Keep the bow hand still."
+        ],
+        [
+            "Phase: Release",
+            "Release appears smooth and controlled.",
+            "Bow hand flinch detected. Max left wrist movement: 0.034 px/frame. Keep the bow hand still."
+        ],
+        [
+            "Phase: Follow_Through",
+            "Body posture remained stable during follow-through."
+        ],
+        [
+            "Phase: Release",
+            "Release appears smooth and controlled.",
+            "Bow hand remained stable during release."
+        ],
+        [
+            "Phase: Follow_Through",
+            "Body posture remained stable during follow-through."
+        ],
+        [
+            "Phase: Follow_Through",
+            "Body posture remained stable during follow-through."
+        ],
+        [
+            "Phase: Follow_Through",
+            "Body posture remained stable during follow-through."
+        ],
+        [
+            "Phase: Release",
+            "Release appears smooth and controlled.",
+            "Bow hand remained stable during release."
+        ],
+        [
+            "Phase: Follow_Through",
+            "Body posture remained stable during follow-through."
+        ],
+        [
+            "Phase: Release",
+            "Release appears smooth and controlled.",
+            "Bow hand remained stable during release."
+        ],
+        [
+            "Phase: Follow_Through",
+            "Body posture remained stable during follow-through."
+        ],
+        [
+            "Phase: Release",
+            "Release appears smooth and controlled.",
+            "Bow hand flinch detected. Max left wrist movement: 0.014 px/frame. Keep the bow hand still."
+        ],
+        [
+            "Phase: Release",
+            "Release appears smooth and controlled.",
+            "Bow hand flinch detected. Max left wrist movement: 0.014 px/frame. Keep the bow hand still."
+        ],
+        [
+            "Phase: Follow_Through",
+            "Body posture remained stable during follow-through."
+        ],
+        [
+            "Phase: Release",
+            "Release appears smooth and controlled.",
+            "Bow hand flinch detected. Max left wrist movement: 0.104 px/frame. Keep the bow hand still."
+        ],
+        [
+            "Phase: Release",
+            "Release appears smooth and controlled.",
+            "Bow hand flinch detected. Max left wrist movement: 0.104 px/frame. Keep the bow hand still."
+        ],
+        [
+            "Phase: Release",
+            "Release appears smooth and controlled.",
+            "Bow hand flinch detected. Max left wrist movement: 0.104 px/frame. Keep the bow hand still."
+        ],
+        [
+            "Phase: Release",
+            "Release appears smooth and controlled.",
+            "Bow hand flinch detected. Max left wrist movement: 0.104 px/frame. Keep the bow hand still."
+        ],
+        [
+            "Phase: Release",
+            "Release appears smooth and controlled.",
+            "Bow hand flinch detected. Max left wrist movement: 0.104 px/frame. Keep the bow hand still."
+        ],
+        [
+            "Phase: Release",
+            "Release appears smooth and controlled.",
+            "Bow hand flinch detected. Max left wrist movement: 0.104 px/frame. Keep the bow hand still."
+        ],
+        [
+            "Phase: Release",
+            "Release appears smooth and controlled.",
+            "Bow hand flinch detected. Max left wrist movement: 0.104 px/frame. Keep the bow hand still."
+        ],
+        [
+            "Phase: Release",
+            "Release appears smooth and controlled.",
+            "Bow hand flinch detected. Max left wrist movement: 0.104 px/frame. Keep the bow hand still."
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.239. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.232. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Release",
+            "Release appears smooth and controlled.",
+            "Bow hand flinch detected. Max left wrist movement: 0.509 px/frame. Keep the bow hand still."
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.246. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.229. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.246. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.229. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.226. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.238. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.226. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.238. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.225. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.237. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.232. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.236. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.232. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.236. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.232. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.236. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.232. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.236. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.232. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.236. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.232. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.236. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.232. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.236. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.232. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.236. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.224. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.237. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.231. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.235. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.227. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.238. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.229. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.237. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.229. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.237. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.229. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.237. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.229. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.237. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.229. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.237. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.229. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.237. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.229. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.237. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.230. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.235. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.237. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.241. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Draw"
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.250. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.237. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.238. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.242. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.238. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.242. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.238. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.242. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.238. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.242. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.238. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.242. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.238. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.242. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.238. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.242. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.238. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.242. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.238. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.242. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.238. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.242. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.238. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.242. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.238. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.242. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.238. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.242. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.238. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.242. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.238. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.242. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.238. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.242. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.238. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.242. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.238. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.242. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.238. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.242. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.238. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.242. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.238. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.242. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.238. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.242. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.238. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.242. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.238. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.242. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.238. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.242. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.238. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.242. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.238. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.242. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.238. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.242. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.238. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.242. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.238. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.242. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.238. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.242. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.238. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.242. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.238. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.242. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.238. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.242. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Draw"
+        ],
+        [
+            "Phase: Draw"
+        ],
+        [
+            "Phase: Draw"
+        ],
+        [
+            "Phase: Draw"
+        ],
+        [
+            "Phase: Draw"
+        ],
+        [
+            "Phase: Draw"
+        ],
+        [
+            "Phase: Draw"
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.245. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.257. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.245. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.257. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.245. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.257. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.245. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.257. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.245. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.257. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Draw"
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.225. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.253. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Release",
+            "Release appears smooth and controlled.",
+            "Bow hand flinch detected. Max left wrist movement: 0.022 px/frame. Keep the bow hand still."
+        ],
+        [
+            "Phase: Follow_Through",
+            "Body posture remained stable during follow-through."
+        ],
+        [
+            "Phase: Release",
+            "Release appears smooth and controlled.",
+            "Bow hand flinch detected. Max left wrist movement: 0.026 px/frame. Keep the bow hand still."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.228. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.234. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Release",
+            "Release appears smooth and controlled.",
+            "Bow hand flinch detected. Max left wrist movement: 0.667 px/frame. Keep the bow hand still."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.361. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.363. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.361. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.363. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.361. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.363. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.361. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.363. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.361. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.363. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.361. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.363. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.361. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.363. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.361. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.363. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.361. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.363. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.361. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.363. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.361. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.363. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.361. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.363. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.361. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.363. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.361. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.363. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.361. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.363. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.361. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.363. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.361. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.363. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.361. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.363. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.361. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.363. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.361. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.363. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.361. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.363. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.361. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.363. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.361. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.363. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.361. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.363. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.361. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.363. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.361. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.363. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.361. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.363. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.361. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.363. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.361. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.363. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.361. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.363. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.361. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.363. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.361. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.363. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.361. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.363. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.361. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.363. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.361. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.363. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.361. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.363. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.361. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.363. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.361. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.363. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Release",
+            "Release appears smooth and controlled.",
+            "Bow hand flinch detected. Max left wrist movement: 0.026 px/frame. Keep the bow hand still."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.460. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.458. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Release",
+            "Release appears smooth and controlled.",
+            "Bow hand flinch detected. Max left wrist movement: 0.023 px/frame. Keep the bow hand still."
+        ],
+        [
+            "Phase: Release",
+            "Release appears smooth and controlled.",
+            "Bow hand flinch detected. Max left wrist movement: 0.023 px/frame. Keep the bow hand still."
+        ],
+        [
+            "Phase: Release",
+            "Release appears smooth and controlled.",
+            "Bow hand flinch detected. Max left wrist movement: 0.023 px/frame. Keep the bow hand still."
+        ],
+        [
+            "Phase: Release",
+            "Release appears smooth and controlled.",
+            "Bow hand flinch detected. Max left wrist movement: 0.023 px/frame. Keep the bow hand still."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.464. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.498. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Release",
+            "Release appears smooth and controlled.",
+            "Bow hand flinch detected. Max left wrist movement: 0.025 px/frame. Keep the bow hand still."
+        ],
+        [
+            "Phase: Release",
+            "Release appears smooth and controlled.",
+            "Bow hand flinch detected. Max left wrist movement: 0.025 px/frame. Keep the bow hand still."
+        ],
+        [
+            "Phase: Release",
+            "Release appears smooth and controlled.",
+            "Bow hand flinch detected. Max left wrist movement: 0.025 px/frame. Keep the bow hand still."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.567. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.576. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.567. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.576. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.567. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.576. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Release",
+            "Release appears smooth and controlled.",
+            "Bow hand flinch detected. Max left wrist movement: 0.088 px/frame. Keep the bow hand still."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.511. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.499. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.511. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.499. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.511. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.499. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Stance",
+            "Poor left side vertical alignment in stance. Deviation: 0.511. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.499. Ensure shoulder, hip, and ankle are stacked vertically."
+        ],
+        [
+            "Phase: Draw"
+        ]
+    ],
+    "phase_summaries": {
+        "stance_alignment_frames_176-176": "Poor left side vertical alignment in stance. Deviation: 0.239. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.232. Ensure shoulder, hip, and ankle are stacked vertically.",
+        "stance_foot_placement_frames_176-176": "Good foot placement in stance. Foot distance: 0.159.",
+        "stance_alignment_frames_200-201": "Poor left side vertical alignment in stance. Deviation: 0.246. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.229. Ensure shoulder, hip, and ankle are stacked vertically.",
+        "stance_foot_placement_frames_200-201": "Good foot placement in stance. Foot distance: 0.137.",
+        "stance_alignment_frames_207-208": "Poor left side vertical alignment in stance. Deviation: 0.226. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.238. Ensure shoulder, hip, and ankle are stacked vertically.",
+        "stance_foot_placement_frames_207-208": "Good foot placement in stance. Foot distance: 0.154.",
+        "stance_alignment_frames_210-210": "Poor left side vertical alignment in stance. Deviation: 0.225. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.237. Ensure shoulder, hip, and ankle are stacked vertically.",
+        "stance_foot_placement_frames_210-210": "Good foot placement in stance. Foot distance: 0.162.",
+        "stance_alignment_frames_212-219": "Poor left side vertical alignment in stance. Deviation: 0.232. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.236. Ensure shoulder, hip, and ankle are stacked vertically.",
+        "stance_foot_placement_frames_212-219": "Good foot placement in stance. Foot distance: 0.159.",
+        "stance_alignment_frames_221-221": "Poor left side vertical alignment in stance. Deviation: 0.224. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.237. Ensure shoulder, hip, and ankle are stacked vertically.",
+        "stance_foot_placement_frames_221-221": "Good foot placement in stance. Foot distance: 0.152.",
+        "stance_alignment_frames_223-223": "Poor left side vertical alignment in stance. Deviation: 0.231. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.235. Ensure shoulder, hip, and ankle are stacked vertically.",
+        "stance_foot_placement_frames_223-223": "Good foot placement in stance. Foot distance: 0.158.",
+        "stance_alignment_frames_229-229": "Poor left side vertical alignment in stance. Deviation: 0.227. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.238. Ensure shoulder, hip, and ankle are stacked vertically.",
+        "stance_foot_placement_frames_229-229": "Good foot placement in stance. Foot distance: 0.170.",
+        "stance_alignment_frames_231-237": "Poor left side vertical alignment in stance. Deviation: 0.229. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.237. Ensure shoulder, hip, and ankle are stacked vertically.",
+        "stance_foot_placement_frames_231-237": "Good foot placement in stance. Foot distance: 0.158.",
+        "stance_alignment_frames_240-240": "Poor left side vertical alignment in stance. Deviation: 0.230. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.235. Ensure shoulder, hip, and ankle are stacked vertically.",
+        "stance_foot_placement_frames_240-240": "Good foot placement in stance. Foot distance: 0.158.",
+        "stance_alignment_frames_242-242": "Poor left side vertical alignment in stance. Deviation: 0.237. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.241. Ensure shoulder, hip, and ankle are stacked vertically.",
+        "stance_foot_placement_frames_242-242": "Good foot placement in stance. Foot distance: 0.141.",
+        "stance_alignment_frames_246-246": "Poor left side vertical alignment in stance. Deviation: 0.250. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.237. Ensure shoulder, hip, and ankle are stacked vertically.",
+        "stance_foot_placement_frames_246-246": "Good foot placement in stance. Foot distance: 0.165.",
+        "stance_alignment_frames_254-287": "Poor left side vertical alignment in stance. Deviation: 0.238. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.242. Ensure shoulder, hip, and ankle are stacked vertically.",
+        "stance_foot_placement_frames_254-287": "Good foot placement in stance. Foot distance: 0.170.",
+        "stance_alignment_frames_295-299": "Poor left side vertical alignment in stance. Deviation: 0.245. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.257. Ensure shoulder, hip, and ankle are stacked vertically.",
+        "stance_foot_placement_frames_295-299": "Good foot placement in stance. Foot distance: 0.199.",
+        "stance_alignment_frames_301-301": "Poor left side vertical alignment in stance. Deviation: 0.225. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.253. Ensure shoulder, hip, and ankle are stacked vertically.",
+        "stance_foot_placement_frames_301-301": "Stance too wide. Foot distance: 0.210. Bring your feet closer for optimal balance.",
+        "stance_alignment_frames_305-305": "Poor left side vertical alignment in stance. Deviation: 0.228. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.234. Ensure shoulder, hip, and ankle are stacked vertically.",
+        "stance_foot_placement_frames_305-305": "Good foot placement in stance. Foot distance: 0.088.",
+        "stance_alignment_frames_316-353": "Poor left side vertical alignment in stance. Deviation: 0.361. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.363. Ensure shoulder, hip, and ankle are stacked vertically.",
+        "stance_foot_placement_frames_316-353": "Stance too wide. Foot distance: 0.249. Bring your feet closer for optimal balance.",
+        "stance_alignment_frames_355-355": "Poor left side vertical alignment in stance. Deviation: 0.460. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.458. Ensure shoulder, hip, and ankle are stacked vertically.",
+        "stance_foot_placement_frames_355-355": "Stance too wide. Foot distance: 0.307. Bring your feet closer for optimal balance.",
+        "stance_alignment_frames_360-360": "Poor left side vertical alignment in stance. Deviation: 0.464. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.498. Ensure shoulder, hip, and ankle are stacked vertically.",
+        "stance_foot_placement_frames_360-360": "Stance too wide. Foot distance: 0.363. Bring your feet closer for optimal balance.",
+        "stance_alignment_frames_364-366": "Poor left side vertical alignment in stance. Deviation: 0.567. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.576. Ensure shoulder, hip, and ankle are stacked vertically.",
+        "stance_foot_placement_frames_364-366": "Stance too wide. Foot distance: 0.353. Bring your feet closer for optimal balance.",
+        "stance_alignment_frames_368-371": "Poor left side vertical alignment in stance. Deviation: 0.511. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.499. Ensure shoulder, hip, and ankle are stacked vertically.",
+        "stance_foot_placement_frames_368-371": "Stance too wide. Foot distance: 0.367. Bring your feet closer for optimal balance.",
+        "release_frames_1-1": "Release appears smooth and controlled.",
+        "release_bow_hand_frames_1-1": "Bow hand flinch detected. Max left wrist movement: 0.013 px/frame. Keep the bow hand still.",
+        "release_frames_3-3": "Release appears smooth and controlled.",
+        "release_bow_hand_frames_3-3": "Bow hand flinch detected. Max left wrist movement: 0.012 px/frame. Keep the bow hand still.",
+        "release_frames_7-8": "Release appears smooth and controlled.",
+        "release_bow_hand_frames_7-8": "Bow hand remained stable during release.",
+        "release_frames_10-10": "Release appears smooth and controlled.",
+        "release_bow_hand_frames_10-10": "Bow hand remained stable during release.",
+        "release_frames_15-15": "Release appears smooth and controlled.",
+        "release_bow_hand_frames_15-15": "Bow hand remained stable during release.",
+        "release_frames_19-19": "Release appears smooth and controlled.",
+        "release_bow_hand_frames_19-19": "Bow hand flinch detected. Max left wrist movement: 0.011 px/frame. Keep the bow hand still.",
+        "release_frames_30-30": "Release appears smooth and controlled.",
+        "release_bow_hand_frames_30-30": "Bow hand remained stable during release.",
+        "release_frames_43-45": "Release appears smooth and controlled.",
+        "release_bow_hand_frames_43-45": "Bow hand flinch detected. Max left wrist movement: 0.034 px/frame. Keep the bow hand still.",
+        "release_frames_47-47": "Release appears smooth and controlled.",
+        "release_bow_hand_frames_47-47": "Bow hand remained stable during release.",
+        "release_frames_51-51": "Release appears smooth and controlled.",
+        "release_bow_hand_frames_51-51": "Bow hand remained stable during release.",
+        "release_frames_53-53": "Release appears smooth and controlled.",
+        "release_bow_hand_frames_53-53": "Bow hand remained stable during release.",
+        "release_frames_55-56": "Release appears smooth and controlled.",
+        "release_bow_hand_frames_55-56": "Bow hand flinch detected. Max left wrist movement: 0.014 px/frame. Keep the bow hand still.",
+        "release_frames_58-65": "Release appears smooth and controlled.",
+        "release_bow_hand_frames_58-65": "Bow hand flinch detected. Max left wrist movement: 0.104 px/frame. Keep the bow hand still.",
+        "release_frames_177-177": "Release appears smooth and controlled.",
+        "release_bow_hand_frames_177-177": "Bow hand flinch detected. Max left wrist movement: 0.509 px/frame. Keep the bow hand still.",
+        "release_frames_302-302": "Release appears smooth and controlled.",
+        "release_bow_hand_frames_302-302": "Bow hand flinch detected. Max left wrist movement: 0.022 px/frame. Keep the bow hand still.",
+        "release_frames_304-304": "Release appears smooth and controlled.",
+        "release_bow_hand_frames_304-304": "Bow hand flinch detected. Max left wrist movement: 0.026 px/frame. Keep the bow hand still.",
+        "release_frames_315-315": "Release appears smooth and controlled.",
+        "release_bow_hand_frames_315-315": "Bow hand flinch detected. Max left wrist movement: 0.667 px/frame. Keep the bow hand still.",
+        "release_frames_354-354": "Release appears smooth and controlled.",
+        "release_bow_hand_frames_354-354": "Bow hand flinch detected. Max left wrist movement: 0.026 px/frame. Keep the bow hand still.",
+        "release_frames_356-359": "Release appears smooth and controlled.",
+        "release_bow_hand_frames_356-359": "Bow hand flinch detected. Max left wrist movement: 0.023 px/frame. Keep the bow hand still.",
+        "release_frames_361-363": "Release appears smooth and controlled.",
+        "release_bow_hand_frames_361-363": "Bow hand flinch detected. Max left wrist movement: 0.025 px/frame. Keep the bow hand still.",
+        "release_frames_367-367": "Release appears smooth and controlled.",
+        "release_bow_hand_frames_367-367": "Bow hand flinch detected. Max left wrist movement: 0.088 px/frame. Keep the bow hand still.",
+        "follow_through_posture_frames_0-0": "Body posture remained stable during follow-through.",
+        "follow_through_hand_frames_0-0": "Draw hand remained calm and controlled during follow-through.",
+        "follow_through_posture_frames_2-2": "Body posture remained stable during follow-through.",
+        "follow_through_hand_frames_2-2": "Draw hand remained calm and controlled during follow-through.",
+        "follow_through_posture_frames_4-6": "Body posture remained stable during follow-through.",
+        "follow_through_head_frames_4-6": "Head remained stable during follow-through.",
+        "follow_through_hand_frames_4-6": "Draw hand remained calm and controlled during follow-through.",
+        "follow_through_posture_frames_9-9": "Body posture remained stable during follow-through.",
+        "follow_through_hand_frames_9-9": "Draw hand remained calm and controlled during follow-through.",
+        "follow_through_posture_frames_11-14": "Body posture remained stable during follow-through.",
+        "follow_through_head_frames_11-14": "Head remained stable during follow-through.",
+        "follow_through_hand_frames_11-14": "Draw hand moved significantly during follow-through. Max right wrist movement: 0.020 px/frame. Aim for a calm and controlled hand movement.",
+        "follow_through_posture_frames_16-18": "Body posture remained stable during follow-through.",
+        "follow_through_head_frames_16-18": "Head remained stable during follow-through.",
+        "follow_through_hand_frames_16-18": "Draw hand remained calm and controlled during follow-through.",
+        "follow_through_posture_frames_20-29": "Body posture remained stable during follow-through.",
+        "follow_through_head_frames_20-29": "Head remained stable during follow-through.",
+        "follow_through_hand_frames_20-29": "Draw hand moved significantly during follow-through. Max right wrist movement: 0.027 px/frame. Aim for a calm and controlled hand movement.",
+        "follow_through_posture_frames_31-42": "Body posture remained stable during follow-through.",
+        "follow_through_head_frames_31-42": "Head remained stable during follow-through.",
+        "follow_through_hand_frames_31-42": "Draw hand moved significantly during follow-through. Max right wrist movement: 0.013 px/frame. Aim for a calm and controlled hand movement.",
+        "follow_through_posture_frames_46-46": "Body posture remained stable during follow-through.",
+        "follow_through_hand_frames_46-46": "Draw hand remained calm and controlled during follow-through.",
+        "follow_through_posture_frames_48-50": "Body posture remained stable during follow-through.",
+        "follow_through_head_frames_48-50": "Head remained stable during follow-through.",
+        "follow_through_hand_frames_48-50": "Draw hand remained calm and controlled during follow-through.",
+        "follow_through_posture_frames_52-52": "Body posture remained stable during follow-through.",
+        "follow_through_hand_frames_52-52": "Draw hand remained calm and controlled during follow-through.",
+        "follow_through_posture_frames_54-54": "Body posture remained stable during follow-through.",
+        "follow_through_hand_frames_54-54": "Draw hand remained calm and controlled during follow-through.",
+        "follow_through_posture_frames_57-57": "Body posture remained stable during follow-through.",
+        "follow_through_hand_frames_57-57": "Draw hand remained calm and controlled during follow-through.",
+        "follow_through_posture_frames_303-303": "Body posture remained stable during follow-through.",
+        "follow_through_hand_frames_303-303": "Draw hand moved significantly during follow-through. Max right wrist movement: 0.102 px/frame. Aim for a calm and controlled hand movement."
+    },
+    "improvement_points": [
+        "Stance: Poor left side vertical alignment in stance. Deviation: 0.239. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.232. Ensure shoulder, hip, and ankle are stacked vertically.",
+        "Stance: Poor left side vertical alignment in stance. Deviation: 0.246. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.229. Ensure shoulder, hip, and ankle are stacked vertically.",
+        "Stance: Poor left side vertical alignment in stance. Deviation: 0.226. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.238. Ensure shoulder, hip, and ankle are stacked vertically.",
+        "Stance: Poor left side vertical alignment in stance. Deviation: 0.225. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.237. Ensure shoulder, hip, and ankle are stacked vertically.",
+        "Stance: Poor left side vertical alignment in stance. Deviation: 0.232. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.236. Ensure shoulder, hip, and ankle are stacked vertically.",
+        "Stance: Poor left side vertical alignment in stance. Deviation: 0.224. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.237. Ensure shoulder, hip, and ankle are stacked vertically.",
+        "Stance: Poor left side vertical alignment in stance. Deviation: 0.231. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.235. Ensure shoulder, hip, and ankle are stacked vertically.",
+        "Stance: Poor left side vertical alignment in stance. Deviation: 0.227. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.238. Ensure shoulder, hip, and ankle are stacked vertically.",
+        "Stance: Poor left side vertical alignment in stance. Deviation: 0.229. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.237. Ensure shoulder, hip, and ankle are stacked vertically.",
+        "Stance: Poor left side vertical alignment in stance. Deviation: 0.230. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.235. Ensure shoulder, hip, and ankle are stacked vertically.",
+        "Stance: Poor left side vertical alignment in stance. Deviation: 0.237. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.241. Ensure shoulder, hip, and ankle are stacked vertically.",
+        "Stance: Poor left side vertical alignment in stance. Deviation: 0.250. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.237. Ensure shoulder, hip, and ankle are stacked vertically.",
+        "Stance: Poor left side vertical alignment in stance. Deviation: 0.238. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.242. Ensure shoulder, hip, and ankle are stacked vertically.",
+        "Stance: Poor left side vertical alignment in stance. Deviation: 0.245. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.257. Ensure shoulder, hip, and ankle are stacked vertically.",
+        "Stance: Poor left side vertical alignment in stance. Deviation: 0.225. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.253. Ensure shoulder, hip, and ankle are stacked vertically.",
+        "Stance: Stance too wide. Foot distance: 0.210. Bring your feet closer for optimal balance.",
+        "Stance: Poor left side vertical alignment in stance. Deviation: 0.228. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.234. Ensure shoulder, hip, and ankle are stacked vertically.",
+        "Stance: Poor left side vertical alignment in stance. Deviation: 0.361. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.363. Ensure shoulder, hip, and ankle are stacked vertically.",
+        "Stance: Stance too wide. Foot distance: 0.249. Bring your feet closer for optimal balance.",
+        "Stance: Poor left side vertical alignment in stance. Deviation: 0.460. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.458. Ensure shoulder, hip, and ankle are stacked vertically.",
+        "Stance: Stance too wide. Foot distance: 0.307. Bring your feet closer for optimal balance.",
+        "Stance: Poor left side vertical alignment in stance. Deviation: 0.464. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.498. Ensure shoulder, hip, and ankle are stacked vertically.",
+        "Stance: Stance too wide. Foot distance: 0.363. Bring your feet closer for optimal balance.",
+        "Stance: Poor left side vertical alignment in stance. Deviation: 0.567. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.576. Ensure shoulder, hip, and ankle are stacked vertically.",
+        "Stance: Stance too wide. Foot distance: 0.353. Bring your feet closer for optimal balance.",
+        "Stance: Poor left side vertical alignment in stance. Deviation: 0.511. Ensure shoulder, hip, and ankle are stacked vertically. Poor right side vertical alignment in stance. Deviation: 0.499. Ensure shoulder, hip, and ankle are stacked vertically.",
+        "Stance: Stance too wide. Foot distance: 0.367. Bring your feet closer for optimal balance.",
+        "Release: Bow hand flinch detected. Max left wrist movement: 0.013 px/frame. Keep the bow hand still.",
+        "Release: Bow hand flinch detected. Max left wrist movement: 0.012 px/frame. Keep the bow hand still.",
+        "Release: Bow hand flinch detected. Max left wrist movement: 0.011 px/frame. Keep the bow hand still.",
+        "Release: Bow hand flinch detected. Max left wrist movement: 0.034 px/frame. Keep the bow hand still.",
+        "Release: Bow hand flinch detected. Max left wrist movement: 0.014 px/frame. Keep the bow hand still.",
+        "Release: Bow hand flinch detected. Max left wrist movement: 0.104 px/frame. Keep the bow hand still.",
+        "Release: Bow hand flinch detected. Max left wrist movement: 0.509 px/frame. Keep the bow hand still.",
+        "Release: Bow hand flinch detected. Max left wrist movement: 0.022 px/frame. Keep the bow hand still.",
+        "Release: Bow hand flinch detected. Max left wrist movement: 0.026 px/frame. Keep the bow hand still.",
+        "Release: Bow hand flinch detected. Max left wrist movement: 0.667 px/frame. Keep the bow hand still.",
+        "Release: Bow hand flinch detected. Max left wrist movement: 0.026 px/frame. Keep the bow hand still.",
+        "Release: Bow hand flinch detected. Max left wrist movement: 0.023 px/frame. Keep the bow hand still.",
+        "Release: Bow hand flinch detected. Max left wrist movement: 0.025 px/frame. Keep the bow hand still.",
+        "Release: Bow hand flinch detected. Max left wrist movement: 0.088 px/frame. Keep the bow hand still.",
+        "Follow-through: Draw hand moved significantly during follow-through. Max right wrist movement: 0.020 px/frame. Aim for a calm and controlled hand movement.",
+        "Follow-through: Draw hand moved significantly during follow-through. Max right wrist movement: 0.027 px/frame. Aim for a calm and controlled hand movement.",
+        "Follow-through: Draw hand moved significantly during follow-through. Max right wrist movement: 0.013 px/frame. Aim for a calm and controlled hand movement.",
+        "Follow-through: Draw hand moved significantly during follow-through. Max right wrist movement: 0.102 px/frame. Aim for a calm and controlled hand movement."
+    ],
+    "phase_scores": {
+        "stance_alignment_score_frames_176-176": 0.0,
+        "stance_foot_placement_score_frames_176-176": 10.0,
+        "stance_alignment_score_frames_200-201": 0.0,
+        "stance_foot_placement_score_frames_200-201": 10.0,
+        "stance_alignment_score_frames_207-208": 0.0,
+        "stance_foot_placement_score_frames_207-208": 10.0,
+        "stance_alignment_score_frames_210-210": 0.0,
+        "stance_foot_placement_score_frames_210-210": 10.0,
+        "stance_alignment_score_frames_212-219": 0.0,
+        "stance_foot_placement_score_frames_212-219": 10.0,
+        "stance_alignment_score_frames_221-221": 0.0,
+        "stance_foot_placement_score_frames_221-221": 10.0,
+        "stance_alignment_score_frames_223-223": 0.0,
+        "stance_foot_placement_score_frames_223-223": 10.0,
+        "stance_alignment_score_frames_229-229": 0.0,
+        "stance_foot_placement_score_frames_229-229": 10.0,
+        "stance_alignment_score_frames_231-237": 0.0,
+        "stance_foot_placement_score_frames_231-237": 10.0,
+        "stance_alignment_score_frames_240-240": 0.0,
+        "stance_foot_placement_score_frames_240-240": 10.0,
+        "stance_alignment_score_frames_242-242": 0.0,
+        "stance_foot_placement_score_frames_242-242": 10.0,
+        "stance_alignment_score_frames_246-246": 0.0,
+        "stance_foot_placement_score_frames_246-246": 10.0,
+        "stance_alignment_score_frames_254-287": 0.0,
+        "stance_foot_placement_score_frames_254-287": 10.0,
+        "stance_alignment_score_frames_295-299": 0.0,
+        "stance_foot_placement_score_frames_295-299": 10.0,
+        "stance_alignment_score_frames_301-301": 0.0,
+        "stance_foot_placement_score_frames_301-301": 5.0,
+        "stance_alignment_score_frames_305-305": 0.0,
+        "stance_foot_placement_score_frames_305-305": 10.0,
+        "stance_alignment_score_frames_316-353": 0.0,
+        "stance_foot_placement_score_frames_316-353": 5.0,
+        "stance_alignment_score_frames_355-355": 0.0,
+        "stance_foot_placement_score_frames_355-355": 5.0,
+        "stance_alignment_score_frames_360-360": 0.0,
+        "stance_foot_placement_score_frames_360-360": 5.0,
+        "stance_alignment_score_frames_364-366": 0.0,
+        "stance_foot_placement_score_frames_364-366": 5.0,
+        "stance_alignment_score_frames_368-371": 0.0,
+        "stance_foot_placement_score_frames_368-371": 5.0,
+        "release_smoothness_score_frames_1-1": 10.0,
+        "release_smoothness_score_frames_3-3": 10.0,
+        "release_smoothness_score_frames_7-8": 10.0,
+        "release_smoothness_score_frames_10-10": 10.0,
+        "release_smoothness_score_frames_15-15": 10.0,
+        "release_smoothness_score_frames_19-19": 10.0,
+        "release_smoothness_score_frames_30-30": 10.0,
+        "release_smoothness_score_frames_43-45": 10.0,
+        "release_smoothness_score_frames_47-47": 10.0,
+        "release_smoothness_score_frames_51-51": 10.0,
+        "release_smoothness_score_frames_53-53": 10.0,
+        "release_smoothness_score_frames_55-56": 10.0,
+        "release_smoothness_score_frames_58-65": 10.0,
+        "release_smoothness_score_frames_177-177": 10.0,
+        "release_smoothness_score_frames_302-302": 10.0,
+        "release_smoothness_score_frames_304-304": 10.0,
+        "release_smoothness_score_frames_315-315": 10.0,
+        "release_smoothness_score_frames_354-354": 10.0,
+        "release_smoothness_score_frames_356-359": 10.0,
+        "release_smoothness_score_frames_361-363": 10.0,
+        "release_smoothness_score_frames_367-367": 10.0
+    }
+}

@@ -1,0 +1,906 @@
+{
+    "phase_data": {
+        "stance": [],
+        "setup": [
+            [
+                47,
+                54
+            ],
+            [
+                259,
+                281
+            ],
+            [
+                283,
+                283
+            ]
+        ],
+        "draw": [
+            [
+                0,
+                46
+            ],
+            [
+                64,
+                64
+            ],
+            [
+                258,
+                258
+            ]
+        ],
+        "anchor": [
+            [
+                55,
+                63
+            ],
+            [
+                65,
+                257
+            ],
+            [
+                282,
+                282
+            ]
+        ],
+        "release": [],
+        "follow_through": []
+    },
+    "per_frame_feedback": [
+        [
+            "Phase: Draw"
+        ],
+        [
+            "Phase: Draw"
+        ],
+        [
+            "Phase: Draw"
+        ],
+        [
+            "Phase: Draw"
+        ],
+        [
+            "Phase: Draw"
+        ],
+        [
+            "Phase: Draw"
+        ],
+        [
+            "Phase: Draw"
+        ],
+        [
+            "Phase: Draw"
+        ],
+        [
+            "Phase: Draw"
+        ],
+        [
+            "Phase: Draw"
+        ],
+        [
+            "Phase: Draw"
+        ],
+        [
+            "Phase: Draw"
+        ],
+        [
+            "Phase: Draw"
+        ],
+        [
+            "Phase: Draw"
+        ],
+        [
+            "Phase: Draw"
+        ],
+        [
+            "Phase: Draw"
+        ],
+        [
+            "Phase: Draw"
+        ],
+        [
+            "Phase: Draw"
+        ],
+        [
+            "Phase: Draw"
+        ],
+        [
+            "Phase: Draw"
+        ],
+        [
+            "Phase: Draw"
+        ],
+        [
+            "Phase: Draw"
+        ],
+        [
+            "Phase: Draw"
+        ],
+        [
+            "Phase: Draw"
+        ],
+        [
+            "Phase: Draw"
+        ],
+        [
+            "Phase: Draw"
+        ],
+        [
+            "Phase: Draw"
+        ],
+        [
+            "Phase: Draw"
+        ],
+        [
+            "Phase: Draw"
+        ],
+        [
+            "Phase: Draw"
+        ],
+        [
+            "Phase: Draw"
+        ],
+        [
+            "Phase: Draw"
+        ],
+        [
+            "Phase: Draw"
+        ],
+        [
+            "Phase: Draw"
+        ],
+        [
+            "Phase: Draw"
+        ],
+        [
+            "Phase: Draw"
+        ],
+        [
+            "Phase: Draw"
+        ],
+        [
+            "Phase: Draw"
+        ],
+        [
+            "Phase: Draw"
+        ],
+        [
+            "Phase: Draw"
+        ],
+        [
+            "Phase: Draw"
+        ],
+        [
+            "Phase: Draw"
+        ],
+        [
+            "Phase: Draw"
+        ],
+        [
+            "Phase: Draw"
+        ],
+        [
+            "Phase: Draw"
+        ],
+        [
+            "Phase: Draw"
+        ],
+        [
+            "Phase: Draw"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Draw"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Draw"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Setup"
+        ],
+        [
+            "Phase: Anchor"
+        ],
+        [
+            "Phase: Setup"
+        ]
+    ],
+    "phase_summaries": {},
+    "improvement_points": [],
+    "phase_scores": {}
+}
