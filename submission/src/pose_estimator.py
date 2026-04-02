@@ -7,7 +7,13 @@ import csv
 
 def estimate_pose(frames_folder, poses_folder):
     mp_pose = mp.solutions.pose
-    pose = mp_pose.Pose(static_image_mode=True, model_complexity=2, enable_segmentation=True, min_detection_confidence=0.5)
+    try:
+        pose = mp_pose.Pose(static_image_mode=True, model_complexity=2, enable_segmentation=True, min_detection_confidence=0.5)
+    except Exception as e:
+        raise RuntimeError(
+            f"Failed to initialize MediaPipe Pose. Ensure mediapipe is installed correctly "
+            f"and that your system supports the required dependencies. Original error: {e}"
+        ) from e
 
     os.makedirs(poses_folder, exist_ok=True)
     processed_frames_count = 0

@@ -15,7 +15,7 @@ def calculate_angle(p1, p2, p3):
     magnitude_v1 = np.linalg.norm(v1)
     magnitude_v2 = np.linalg.norm(v2)
 
-    if magnitude_v1 == 0 or magnitude_v2 == 0:
+    if magnitude_v1 < 1e-6 or magnitude_v2 < 1e-6:
         return 0.0 # Avoid division by zero
 
     angle_rad = np.arccos(dot_product / (magnitude_v1 * magnitude_v2))

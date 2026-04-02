@@ -47,17 +47,19 @@ def visualize_feedback(video_name, frames_dir, poses_dir, output_dir, current_vi
                 return
 
             height, width, _ = first_frame.shape
-            try:
-                fourcc = cv2.VideoWriter_fourcc(*'mp4v')  # Changed codec
-                output_video_path = output_video_path.replace('.mp4', '.mp4')  # Ensure .mp4 extension
-                out = cv2.VideoWriter(output_video_path, fourcc, fps, (width, height), isColor=True)
-                
-                if not out.isOpened():
-                    print(f"Error: Could not open video writer for {output_video_path}. Skipping this video.")
-                    return
-            
-            except Exception as e:
-                print(f"Error initializing video writer for {output_video_path}: {e}. Skipping.")
+            out = None
+            for codec in ['mp4v', 'XVID', 'MJPG']:
+                try:
+                    fourcc = cv2.VideoWriter_fourcc(*codec)
+                    candidate = cv2.VideoWriter(output_video_path, fourcc, fps, (width, height), isColor=True)
+                    if candidate.isOpened():
+                        out = candidate
+                        break
+                    candidate.release()
+                except Exception as e:
+                    print(f"Warning: Codec '{codec}' failed for {output_video_path}: {e}. Trying next codec.")
+            if out is None:
+                print(f"Error: Could not open video writer for {output_video_path} with any codec. Skipping this video.")
                 return
 
 
@@ -87,9 +89,11 @@ def visualize_feedback(video_name, frames_dir, poses_dir, output_dir, current_vi
                             if pose_data:
                                 landmarks = pose_data
                     except json.JSONDecodeError as e:
-                        print(f"Error decoding JSON from {pose_path}: {e}. Skipping landmarks for this frame.")
+                        print(f"Warning: Error decoding JSON from {pose_path}: {e}. Skipping landmarks for this frame.")
                     except Exception as e:
                         print(f"Error loading pose data from {pose_path}: {e}. Skipping landmarks for this frame.")
+                else:
+                    print(f"Warning: Pose file not found: {pose_path}. Skipping landmarks for this frame.")
 
                 # Overlay landmarks if available
                 if landmarks:

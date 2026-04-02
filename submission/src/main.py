@@ -2,7 +2,6 @@ import os
 import cv2
 import json
 import shutil
-import os
 from tqdm import tqdm
 
 from pose_estimator import estimate_pose, save_landmarks_to_csv
