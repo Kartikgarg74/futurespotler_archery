@@ -1,0 +1,28 @@
+# Archery Posture Analysis Configuration
+
+mediapipe:
+  static_image_mode: true
+  model_complexity: 2
+  enable_segmentation: true
+  min_detection_confidence: 0.5
+
+scoring:
+  ideal_diff_threshold: 5
+  ideal_std_dev_threshold: 5
+
+video:
+  preferred_codecs:
+    - mp4v
+    - XVID
+    - MJPG
+  fps: 30
+
+paths:
+  videos_dir: videos
+  frames_dir: frames
+  output_dir: output
+  feedback_dir: feedback
+
+analysis:
+  epsilon: 0.000001
+  max_frames: 500
