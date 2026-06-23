@@ -1,7 +1,6 @@
 import os
 import json
 import numpy as np
-import os
 
 def calculate_angle(p1, p2, p3):
     """
@@ -90,14 +89,6 @@ def analyze_pose(pose_data):
         else:
             feedback.append(f"Right elbow angle ({elbow_angle_right:.2f} degrees) looks good.")
 
-        # Add more angle calculations as needed for other joints (e.g., shoulder, knee, hip)
-        # For example, shoulder angle (torso-shoulder-elbow)
-        # left_hip = pose_data[23]
-        # left_shoulder = pose_data[11]
-        # left_elbow = pose_data[13]
-        # shoulder_angle_left = calculate_angle(left_hip, left_shoulder, left_elbow)
-        # angles['shoulder_left'] = shoulder_angle_left
-
     return feedback, angles
 
 def detect_phases(all_frames_pose_data):
@@ -170,9 +161,6 @@ def detect_phases(all_frames_pose_data):
                 phases['anchor'].append(i)
             elif right_wrist_x < right_shoulder_x - 0.1: # Arbitrary threshold for draw
                 phases['draw'].append(i)
-            # Heuristic for 'anchor' phase: right wrist close to nose
-            elif distance_nose_wrist < 0.15: # Adjusted threshold for close proximity
-                phases['anchor'].append(i)
             # Heuristic for 'release' phase: right wrist moves significantly to the right after anchor
             # Now incorporating velocity for more precise detection
             elif right_wrist_x > right_shoulder_x + 0.1 and distance_nose_wrist > 0.2 and right_wrist_speed > 0.01: # Arbitrary thresholds, added speed
@@ -227,21 +215,6 @@ def detect_phases(all_frames_pose_data):
         phases[phase_name] = group_consecutive_frames(frame_list)
 
     return phases, frame_velocities
-    # A more robust solution would involve state machines, velocity analysis, or ML models.
-
-    # Convert lists of frame indices to start-end tuples
-    # This is a very basic conversion and assumes contiguous frames for a phase.
-    # A real implementation would group consecutive frames.
-    segmented_phases = {}
-    for phase_name, frame_indices in phases.items():
-        if frame_indices:
-            # For simplicity, just taking min/max for now. Real segmentation is harder.
-            segmented_phases[phase_name] = [(min(frame_indices), max(frame_indices))]
-        else:
-            segmented_phases[phase_name] = []
-    print(f"Debug: Segmented phases: {segmented_phases}")
-
-    return segmented_phases, frame_velocities
 
 def process_poses_directory(poses_root_folder, feedback_output_dir):
     all_video_results = {}
@@ -422,6 +395,77 @@ def process_poses_directory(poses_root_folder, feedback_output_dir):
                             for frame_idx in range(start_frame, end_frame + 1):
                                 if frame_idx < len(per_frame_feedback):
                                     per_frame_feedback[frame_idx].append(f"Phase: {phase_name.title()}")
+                            if phase_pose_data:
+                                # Track movement of string-side elbow (right elbow for right-handed archer)
+                                right_elbow_x_coords = [p[14]['x'] for p in phase_pose_data if len(p) > 14]
+                                right_elbow_y_coords = [p[14]['y'] for p in phase_pose_data if len(p) > 14]
+
+                                if len(right_elbow_x_coords) > 1 and len(right_elbow_y_coords) > 1:
+                                    # Calculate path length and straightness
+                                    path_length = 0
+                                    for i in range(1, len(right_elbow_x_coords)):
+                                        path_length += np.sqrt((right_elbow_x_coords[i] - right_elbow_x_coords[i-1])**2 +
+                                                                (right_elbow_y_coords[i] - right_elbow_y_coords[i-1])**2)
+
+                                    # A very simple measure of straightness: compare path length to direct distance
+                                    direct_distance = np.sqrt((right_elbow_x_coords[-1] - right_elbow_x_coords[0])**2 +
+                                                              (right_elbow_y_coords[-1] - right_elbow_y_coords[0])**2)
+
+                                    if path_length > 0 and direct_distance > 0:
+                                        straightness_ratio = direct_distance / path_length
+                                        if straightness_ratio < 0.9: # Arbitrary threshold for curved path
+                                            feedback_msg = f"Draw path is curved. Straightness ratio: {straightness_ratio:.2f}. Aim for a straighter elbow path."
+                                            phase_feedback.append(feedback_msg)
+                                            for frame_idx in range(start_frame, end_frame + 1):
+                                                per_frame_feedback[frame_idx].append(feedback_msg)
+                                            video_feedback['improvement_points'].append(f"Draw: {feedback_msg}")
+                                        else:
+                                            feedback_msg = "Elbow path during draw is consistent and straight."
+                                            phase_feedback.append(feedback_msg)
+                                            for frame_idx in range(start_frame, end_frame + 1):
+                                                per_frame_feedback[frame_idx].append(feedback_msg)
+                                    else:
+                                        feedback_msg = "Insufficient movement data for elbow path analysis."
+                                        phase_feedback.append(feedback_msg)
+                                        for frame_idx in range(start_frame, end_frame + 1):
+                                            per_frame_feedback[frame_idx].append(feedback_msg)
+                                    video_feedback['phase_summaries'][f'draw_elbow_path_frames_{start_frame}-{end_frame}'] = feedback_msg
+
+                                # Check shoulder height consistency (no shoulder drop)
+                                left_shoulder_y_coords = [p[11]['y'] for p in phase_pose_data if len(p) > 11]
+                                right_shoulder_y_coords = [p[12]['y'] for p in phase_pose_data if len(p) > 12]
+
+                                if len(left_shoulder_y_coords) > 1 and len(right_shoulder_y_coords) > 1:
+                                    left_shoulder_y_std = np.std(left_shoulder_y_coords)
+                                    right_shoulder_y_std = np.std(right_shoulder_y_coords)
+
+                                    if left_shoulder_y_std > 0.02: # Arbitrary threshold for inconsistency
+                                        feedback_msg = f"Left shoulder height inconsistent during draw. Variation: {left_shoulder_y_std:.3f}."
+                                        phase_feedback.append(feedback_msg)
+                                        for frame_idx in range(start_frame, end_frame + 1):
+                                            per_frame_feedback[frame_idx].append(feedback_msg)
+                                        video_feedback['improvement_points'].append(f"Draw: {feedback_msg}")
+                                    else:
+                                        feedback_msg = "Left shoulder height is consistent during draw."
+                                        phase_feedback.append(feedback_msg)
+                                        for frame_idx in range(start_frame, end_frame + 1):
+                                            per_frame_feedback[frame_idx].append(feedback_msg)
+                                    video_feedback['phase_summaries'][f'draw_left_shoulder_frames_{start_frame}-{end_frame}'] = feedback_msg
+
+                                    if right_shoulder_y_std > 0.02: # Arbitrary threshold for inconsistency
+                                        feedback_msg = f"Right shoulder height inconsistent during draw. Variation: {right_shoulder_y_std:.3f}."
+                                        phase_feedback.append(feedback_msg)
+                                        for frame_idx in range(start_frame, end_frame + 1):
+                                            per_frame_feedback[frame_idx].append(feedback_msg)
+                                        video_feedback['improvement_points'].append(f"Draw: {feedback_msg}")
+                                    else:
+                                        feedback_msg = "Right shoulder height is consistent during draw."
+                                        phase_feedback.append(feedback_msg)
+                                        for frame_idx in range(start_frame, end_frame + 1):
+                                            per_frame_feedback[frame_idx].append(feedback_msg)
+                                    video_feedback['phase_summaries'][f'draw_right_shoulder_frames_{start_frame}-{end_frame}'] = feedback_msg
+                            else:
+                                phase_feedback.append("No pose data available for draw phase analysis.")
 
                         elif phase_name == 'follow_through':
                             for frame_idx in range(start_frame, end_frame + 1):
@@ -481,227 +525,6 @@ def process_poses_directory(poses_root_folder, feedback_output_dir):
                                         phase_feedback.append(feedback_msg)
                                     video_feedback['phase_summaries'][f'follow_through_hand_frames_{start_frame}-{end_frame}'] = feedback_msg
 
-                        elif phase_name == 'draw':
-                            for frame_idx in range(start_frame, end_frame + 1):
-                                per_frame_feedback[frame_idx].append(f"Phase: {phase_name.title()}")
-                            if phase_pose_data:
-                                # Track movement of string-side elbow (right elbow for right-handed archer)
-                                right_elbow_x_coords = [p[14]['x'] for p in phase_pose_data if len(p) > 14]
-                                right_elbow_y_coords = [p[14]['y'] for p in phase_pose_data if len(p) > 14]
-
-                                if len(right_elbow_x_coords) > 1 and len(right_elbow_y_coords) > 1:
-                                    # Calculate path length and straightness
-                                    path_length = 0
-                                    for i in range(1, len(right_elbow_x_coords)):
-                                        path_length += np.sqrt((right_elbow_x_coords[i] - right_elbow_x_coords[i-1])**2 +
-                                                                (right_elbow_y_coords[i] - right_elbow_y_coords[i-1])**2)
-                                    
-                                    # A very simple measure of straightness: compare path length to direct distance
-                                    direct_distance = np.sqrt((right_elbow_x_coords[-1] - right_elbow_x_coords[0])**2 +
-                                                              (right_elbow_y_coords[-1] - right_elbow_y_coords[0])**2)
-                                    
-                                    if path_length > 0 and direct_distance > 0:
-                                        straightness_ratio = direct_distance / path_length
-                                        if straightness_ratio < 0.9: # Arbitrary threshold for curved path
-                                            feedback_msg = f"Draw path is curved. Straightness ratio: {straightness_ratio:.2f}. Aim for a straighter elbow path."
-                                            phase_feedback.append(feedback_msg)
-                                            for frame_idx in range(start_frame, end_frame + 1):
-                                                per_frame_feedback[frame_idx].append(feedback_msg)
-                                            video_feedback['improvement_points'].append(f"Draw: {feedback_msg}")
-                                        else:
-                                            feedback_msg = "Elbow path during draw is consistent and straight."
-                                            phase_feedback.append(feedback_msg)
-                                            for frame_idx in range(start_frame, end_frame + 1):
-                                                per_frame_feedback[frame_idx].append(feedback_msg)
-                                    else:
-                                        feedback_msg = "Insufficient movement data for elbow path analysis."
-                                        phase_feedback.append(feedback_msg)
-                                        for frame_idx in range(start_frame, end_frame + 1):
-                                            per_frame_feedback[frame_idx].append(feedback_msg)
-                                    video_feedback['phase_summaries'][f'draw_elbow_path_frames_{start_frame}-{end_frame}'] = feedback_msg
-
-                                # Check shoulder height consistency (no shoulder drop)
-                                left_shoulder_y_coords = [p[11]['y'] for p in phase_pose_data if len(p) > 11]
-                                right_shoulder_y_coords = [p[12]['y'] for p in phase_pose_data if len(p) > 12]
-
-                                if len(left_shoulder_y_coords) > 1 and len(right_shoulder_y_coords) > 1:
-                                    left_shoulder_y_std = np.std(left_shoulder_y_coords)
-                                    right_shoulder_y_std = np.std(right_shoulder_y_coords)
-
-                                    if left_shoulder_y_std > 0.02: # Arbitrary threshold for inconsistency
-                                        feedback_msg = f"Left shoulder height inconsistent during draw. Variation: {left_shoulder_y_std:.3f}."
-                                        phase_feedback.append(feedback_msg)
-                                        for frame_idx in range(start_frame, end_frame + 1):
-                                            per_frame_feedback[frame_idx].append(feedback_msg)
-                                        video_feedback['improvement_points'].append(f"Draw: {feedback_msg}")
-                                    else:
-                                        feedback_msg = "Left shoulder height is consistent during draw."
-                                        phase_feedback.append(feedback_msg)
-                                        for frame_idx in range(start_frame, end_frame + 1):
-                                            per_frame_feedback[frame_idx].append(feedback_msg)
-                                    video_feedback['phase_summaries'][f'draw_left_shoulder_frames_{start_frame}-{end_frame}'] = feedback_msg
-                                    
-                                    if right_shoulder_y_std > 0.02: # Arbitrary threshold for inconsistency
-                                        feedback_msg = f"Right shoulder height inconsistent during draw. Variation: {right_shoulder_y_std:.3f}."
-                                        phase_feedback.append(feedback_msg)
-                                        for frame_idx in range(start_frame, end_frame + 1):
-                                            per_frame_feedback[frame_idx].append(feedback_msg)
-                                        video_feedback['improvement_points'].append(f"Draw: {feedback_msg}")
-                                    else:
-                                        feedback_msg = "Right shoulder height is consistent during draw."
-                                        phase_feedback.append(feedback_msg)
-                                        for frame_idx in range(start_frame, end_frame + 1):
-                                            per_frame_feedback[frame_idx].append(feedback_msg)
-                                    video_feedback['phase_summaries'][f'draw_right_shoulder_frames_{start_frame}-{end_frame}'] = feedback_msg
-                                    video_feedback['phase_summaries'][f'draw_right_shoulder_frames_{start_frame}-{end_frame}'] = feedback_msg
-
-                                # Calculate elbow angles and provide feedback
-                                # Assuming get_angle function is available and returns angles for relevant landmarks
-                                # This part needs actual angle calculation logic based on your pose data structure
-                                # For example, if you have a function like calculate_angle(p1, p2, p3):
-                                # right_elbow_angles = [calculate_angle(p[12], p[14], p[16]) for p in phase_pose_data if len(p) > 16]
-                                # left_elbow_angles = [calculate_angle(p[11], p[13], p[15]) for p in phase_pose_data if len(p) > 15]
-
-                                # Placeholder for elbow angle feedback
-                                # if right_elbow_angles:
-                                #     avg_right_elbow_angle = np.mean(right_elbow_angles)
-                                #     if avg_right_elbow_angle < 90: # Example threshold
-                                #         feedback_msg = f"Right elbow angle too acute: {avg_right_elbow_angle:.2f} degrees. Aim for a more open angle."
-                                #         phase_feedback.append(feedback_msg)
-                                #         video_feedback['improvement_points'].append(f"Draw: {feedback_msg}")
-                                #     video_feedback['phase_summaries'][f'draw_right_elbow_angle_frames_{start_frame}-{end_frame}'] = phase_feedback[-1]
-
-                                # if left_elbow_angles:
-                                #     avg_left_elbow_angle = np.mean(left_elbow_angles)
-                                #     if avg_left_elbow_angle > 160: # Example threshold for overextension
-                                #         feedback_msg = f"Left elbow angle too extended: {avg_left_elbow_angle:.2f} degrees. Maintain a slight bend."
-                                #         phase_feedback.append(feedback_msg)
-                                #         video_feedback['improvement_points'].append(f"Draw: {feedback_msg}")
-                                #     video_feedback['phase_summaries'][f'draw_left_elbow_angle_frames_{start_frame}-{end_frame}'] = phase_feedback[-1]
-
-                            else:
-                                phase_feedback.append("No pose data available for draw phase analysis.")
-                        elif phase_name == 'setup':
-                            if phase_pose_data:
-                                # Check left/right hand distance from the bow center (wrist + elbow position)
-                                # Using midpoint of shoulders as a proxy for bow center
-                                mid_shoulder_x = (phase_pose_data[0][11]['x'] + phase_pose_data[0][12]['x']) / 2
-                                mid_shoulder_y = (phase_pose_data[0][11]['y'] + phase_pose_data[0][12]['y']) / 2
-                                bow_center_proxy = {'x': mid_shoulder_x, 'y': mid_shoulder_y, 'z': 0} # Z can be ignored for 2D distance
-
-                                # Assuming the bow is held by the left hand (for right-handed archer)
-                                left_wrist = phase_pose_data[0][15]
-                                left_elbow = phase_pose_data[0][13]
-
-                                dist_left_wrist_bow_center = np.sqrt((left_wrist['x'] - bow_center_proxy['x'])**2 + (left_wrist['y'] - bow_center_proxy['y'])**2)
-                                dist_left_elbow_bow_center = np.sqrt((left_elbow['x'] - bow_center_proxy['x'])**2 + (left_elbow['y'] - bow_center_proxy['y'])**2)
-
-                                # Arbitrary thresholds for feedback
-                                if dist_left_wrist_bow_center < 0.05: # Too close
-                                    feedback_msg = "Bow-side wrist is too close to the body center. Ensure proper extension."
-                                    phase_feedback.append(feedback_msg)
-                                    for frame_idx in range(start_frame, end_frame + 1):
-                                        per_frame_feedback[frame_idx].append(feedback_msg)
-                                elif dist_left_wrist_bow_center > 0.2: # Too far
-                                    feedback_msg = "Bow-side wrist is too far from the body center. Check your bow arm extension."
-                                    phase_feedback.append(feedback_msg)
-                                    for frame_idx in range(start_frame, end_frame + 1):
-                                        per_frame_feedback[frame_idx].append(feedback_msg)
-                                else:
-                                    phase_feedback.append("Bow-side wrist position looks good relative to body center.")
-
-                                if dist_left_elbow_bow_center < 0.1: # Too close
-                                    phase_feedback.append("Bow-side elbow is too close to the body center. Ensure proper extension.")
-                                elif dist_left_elbow_bow_center > 0.3: # Too far
-                                    feedback_msg = "Bow-side elbow is too far from the body center. Check your bow arm extension."
-                                    phase_feedback.append(feedback_msg)
-                                    for frame_idx in range(start_frame, end_frame + 1):
-                                        per_frame_feedback[frame_idx].append(feedback_msg)
-                                else:
-                                    feedback_msg = "Bow-side elbow position looks good relative to body center."
-                                    phase_feedback.append(feedback_msg)
-                                    for frame_idx in range(start_frame, end_frame + 1):
-                                        per_frame_feedback[frame_idx].append(feedback_msg)
-
-                                # Look for arrow-hand consistency by checking wrist/elbow height over multiple frames
-                                # Assuming right hand is arrow hand
-                                right_wrist_y_coords = [p[16]['y'] for p in phase_pose_data if len(p) > 16]
-                                right_elbow_y_coords = [p[14]['y'] for p in phase_pose_data if len(p) > 14]
-
-                                if len(right_wrist_y_coords) > 1:
-                                    wrist_y_std = np.std(right_wrist_y_coords)
-                                    if wrist_y_std > 0.02: # Arbitrary threshold for inconsistency
-                                        feedback_msg = f"Inconsistent arrow-hand wrist height detected. Variation: {wrist_y_std:.3f}."
-                                        phase_feedback.append(feedback_msg)
-                                        for frame_idx in range(start_frame, end_frame + 1):
-                                            per_frame_feedback[frame_idx].append(feedback_msg)
-                                    else:
-                                        feedback_msg = "Arrow-hand wrist height is consistent."
-                                        phase_feedback.append(feedback_msg)
-                                        for frame_idx in range(start_frame, end_frame + 1):
-                                            per_frame_feedback[frame_idx].append(feedback_msg)
-
-                                if len(right_elbow_y_coords) > 1:
-                                    elbow_y_std = np.std(right_elbow_y_coords)
-                                    if elbow_y_std > 0.02: # Arbitrary threshold for inconsistency
-                                        feedback_msg = f"Inconsistent arrow-hand elbow height detected. Variation: {elbow_y_std:.3f}."
-                                        phase_feedback.append(feedback_msg)
-                                        for frame_idx in range(start_frame, end_frame + 1):
-                                            per_frame_feedback[frame_idx].append(feedback_msg)
-                                    else:
-                                        feedback_msg = "Arrow-hand elbow height is consistent."
-                                        phase_feedback.append(feedback_msg)
-                                        for frame_idx in range(start_frame, end_frame + 1):
-                                            per_frame_feedback[frame_idx].append(feedback_msg)
-
-                                # Measure bow grip by distance between bow-side wrist and shoulder
-                                # Distance between left wrist (15) and left shoulder (11)
-                                if len(phase_pose_data[0]) > 15 and len(phase_pose_data[0]) > 11:
-                                    left_wrist_grip = phase_pose_data[0][15]
-                                    left_shoulder_grip = phase_pose_data[0][11]
-                                    grip_distance = np.sqrt((left_wrist_grip['x'] - left_shoulder_grip['x'])**2 + (left_wrist_grip['y'] - left_shoulder_grip['y'])**2)
-
-                                    if grip_distance < 0.1: # Too close, possibly collapsed grip
-                                        feedback_msg = "Bow grip appears too close to the shoulder. Ensure proper bow arm extension."
-                                        phase_feedback.append(feedback_msg)
-                                        for frame_idx in range(start_frame, end_frame + 1):
-                                            per_frame_feedback[frame_idx].append(feedback_msg)
-                                    elif grip_distance > 0.2: # Too far, possibly overextended
-                                        feedback_msg = "Bow grip appears too far from the shoulder. Check your bow arm form."
-                                        phase_feedback.append(feedback_msg)
-                                        for frame_idx in range(start_frame, end_frame + 1):
-                                            per_frame_feedback[frame_idx].append(feedback_msg)
-                                    else:
-                                        feedback_msg = "Bow grip distance from shoulder looks good."
-                                        phase_feedback.append(feedback_msg)
-                                        for frame_idx in range(start_frame, end_frame + 1):
-                                            per_frame_feedback[frame_idx].append(feedback_msg)
-
-
-
-
-
-
-
-
-                                        
-
-
-
-
-
-
-                                                                                 # Rate alignment and balance
-                                    # This is a summary based on previous checks
-                                    balance_issues = [fb for fb in phase_feedback if 'imbalance' in fb or 'stability' in fb or 'balance' in fb]
-                                    if not balance_issues:
-                                        phase_feedback.append("Overall alignment and balance: Good.")
-                                    elif len(balance_issues) == 1:
-                                        phase_feedback.append(f"Overall alignment and balance: Fair. {balance_issues[0]}")
-                                    else:
-                                        phase_feedback.append("Overall alignment and balance: Needs improvement. Multiple issues detected.")
-                                else:
-                                    phase_feedback.append("No pose data available for stance phase analysis.")
                         elif phase_name == 'anchor':
                             for frame_idx in range(start_frame, end_frame + 1):
                                 per_frame_feedback[frame_idx].append(f"Phase: {phase_name.title()}")
@@ -788,88 +611,9 @@ def process_poses_directory(poses_root_folder, feedback_output_dir):
                                     phase_feedback.append(feedback_msg)
                                     for frame_idx in range(start_frame, end_frame + 1):
                                         per_frame_feedback[frame_idx].append(feedback_msg)
-                                    for frame_idx in range(start_frame, end_frame + 1):
-                                        per_frame_feedback[frame_idx].append(feedback_msg)
 
                             else:
                                 phase_feedback.append("No pose data available for anchor phase analysis.")
-
-                        elif phase_name == 'setup':
-                            for frame_idx in range(start_frame, end_frame + 1):
-                                per_frame_feedback[frame_idx].append(f"Phase: {phase_name.title()}")
-                            if phase_pose_data:
-                                # 1. Bow-side wrist and elbow distance from the body center
-                                # Check consistency of bow-side arm extension and position
-                                bow_arm_distances = []
-                                for pose_data_frame in phase_pose_data:
-                                    if len(pose_data_frame) > 11 and len(pose_data_frame) > 13:
-                                        left_shoulder = pose_data_frame[11] # Bow side shoulder
-                                        left_wrist = pose_data_frame[15] # Bow side wrist
-                                        left_elbow = pose_data_frame[13] # Bow side elbow
-
-                                        # Distance from wrist to shoulder (proxy for arm extension)
-                                        wrist_shoulder_dist = np.sqrt((left_wrist['x'] - left_shoulder['x'])**2 + (left_wrist['y'] - left_shoulder['y'])**2)
-                                        bow_arm_distances.append(wrist_shoulder_dist)
-
-                                if bow_arm_distances:
-                                    dist_std = np.std(bow_arm_distances)
-                                    if dist_std < 0.02: # Low variance
-                                        feedback_msg = "Bow-side arm extension is consistent during setup."
-                                        phase_feedback.append(feedback_msg)
-                                        for frame_idx in range(start_frame, end_frame + 1):
-                                            per_frame_feedback[frame_idx].append(feedback_msg)
-                                    else: # High variance
-                                        feedback_msg = f"Bow-side arm extension shows variance ({dist_std:.3f}) during setup. Focus on consistent extension."
-                                        phase_feedback.append(feedback_msg)
-                                        for frame_idx in range(start_frame, end_frame + 1):
-                                            per_frame_feedback[frame_idx].append(feedback_msg)
-
-                                # 2. Arrow-hand consistency (e.g., consistent grip/placement on string)
-                                # This is harder to detect with pose landmarks alone, might need more specific landmarks or object detection.
-                                # For now, let's use the right wrist (arrow hand) position relative to the body center.
-                                right_wrist_x_coords = []
-                                for pose_data_frame in phase_pose_data:
-                                    if len(pose_data_frame) > 16:
-                                        right_wrist_x_coords.append(pose_data_frame[16]['x'])
-
-                                if right_wrist_x_coords:
-                                    wrist_x_std = np.std(right_wrist_x_coords)
-                                    if wrist_x_std < 0.015: # Low variance
-                                        feedback_msg = "Arrow-hand placement is consistent during setup."
-                                        phase_feedback.append(feedback_msg)
-                                        for frame_idx in range(start_frame, end_frame + 1):
-                                            per_frame_feedback[frame_idx].append(feedback_msg)
-                                    else: # High variance
-                                        feedback_msg = f"Arrow-hand placement shows variance ({wrist_x_std:.3f}) during setup. Ensure consistent grip."
-                                        phase_feedback.append(feedback_msg)
-                                        for frame_idx in range(start_frame, end_frame + 1):
-                                            per_frame_feedback[frame_idx].append(feedback_msg)
-
-                                # 3. Bow grip distance from the shoulder (consistency)
-                                # Using left wrist (bow grip) and left shoulder
-                                bow_grip_distances = []
-                                for pose_data_frame in phase_pose_data:
-                                    if len(pose_data_frame) > 11 and len(pose_data_frame) > 15:
-                                        left_shoulder = pose_data_frame[11]
-                                        left_wrist = pose_data_frame[15]
-                                        distance = np.sqrt((left_wrist['x'] - left_shoulder['x'])**2 + (left_wrist['y'] - left_shoulder['y'])**2)
-                                        bow_grip_distances.append(distance)
-
-                                if bow_grip_distances:
-                                    grip_dist_std = np.std(bow_grip_distances)
-                                    if grip_dist_std < 0.02: # Low variance
-                                        feedback_msg = "Bow grip distance from shoulder is consistent during setup."
-                                        phase_feedback.append(feedback_msg)
-                                        for frame_idx in range(start_frame, end_frame + 1):
-                                            per_frame_feedback[frame_idx].append(feedback_msg)
-                                    else: # High variance
-                                        feedback_msg = f"Bow grip distance shows variance ({grip_dist_std:.3f}) during setup. Maintain consistent distance."
-                                        phase_feedback.append(feedback_msg)
-                                        for frame_idx in range(start_frame, end_frame + 1):
-                                            per_frame_feedback[frame_idx].append(feedback_msg)
-
-                            else:
-                                phase_feedback.append("No pose data available for setup phase analysis.")
 
                         # Store phase feedback and scores
                         video_feedback['phase_scores'].update(video_scores)

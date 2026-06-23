@@ -2,7 +2,6 @@ import cv2
 import mediapipe as mp
 import os
 import json
-import cv2 # Added cv2 import
 from feedback_analyzer import calculate_angle, analyze_pose
 from mediapipe.framework.formats import landmark_pb2 # Import NormalizedLandmarkList
 
@@ -118,11 +117,7 @@ def visualize_feedback(video_name, frames_dir, poses_dir, output_dir, current_vi
 
 
                 # Get feedback from feedback_analyzer.py
-                # Get feedback from feedback_analyzer.py
-                # The all_video_results is a dictionary with video_name as key and a dictionary of results as value.
-                # The inner dictionary contains 'per_frame_feedback' and 'phase_data'.
-                # 'per_frame_feedback' is a list of lists, where each inner list contains feedback strings for a frame.
-                # 'phase_data' is a dictionary containing phase names and their corresponding frame intervals.
+                # all_video_results maps video_name to a dict with 'per_frame_feedback' and 'phase_data'.
 
                 per_frame_feedback_list = current_video_feedback_data.get('per_frame_feedback', [])
                 phase_data = current_video_feedback_data.get('phase_data', {})
@@ -151,8 +146,6 @@ def visualize_feedback(video_name, frames_dir, poses_dir, output_dir, current_vi
                             if current_phase != "N/A":
                                 break
 
-                # Get feedback text for the current frame with bounds checking
-                feedback_text = ""
                 # Get feedback text for the current frame with bounds checking
                 feedback_text = ""
                 if frame_index != -1 and 0 <= frame_index < len(per_frame_feedback_list):

@@ -1,7 +1,6 @@
 import os
 import cv2
 import json
-import shutil
 from tqdm import tqdm
 
 from pose_estimator import estimate_pose, save_landmarks_to_csv
@@ -59,8 +58,6 @@ def main():
         with open(individual_feedback_json_path, 'w') as f:
             json.dump(feedback_data, f, indent=4)
 
-
-
     # Step 4: Generate feedback videos
     for video_file in tqdm(video_files, desc="Generating feedback videos"):
         video_path = os.path.join(VIDEO_DIR, video_file)
@@ -73,9 +70,7 @@ def main():
         
         # Get feedback data for current video
         current_video_feedback_data = all_video_results.get(video_name, {})
-        
 
-        
         # Generate feedback video
         visualize_feedback(
             video_name,
@@ -85,8 +80,6 @@ def main():
             current_video_feedback_data,
             fps
         )
-        
-
 
     print("Processing complete. Feedback videos and JSONs generated.")
 

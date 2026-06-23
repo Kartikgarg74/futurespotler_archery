@@ -2,7 +2,6 @@ import os
 import json
 import cv2
 import mediapipe as mp
-import os
 import csv
 
 def estimate_pose(frames_folder, poses_folder):
@@ -47,9 +46,6 @@ def estimate_pose(frames_folder, poses_folder):
             processed_frames_count += 1
         else:
             print(f"No pose landmarks detected for {frame_path}. Skipping JSON creation for this frame.")
-            # Optionally, save an empty JSON or a JSON indicating no landmarks
-            # For now, we just skip saving the JSON if no landmarks are detected
-            continue
 
 
 
@@ -102,20 +98,3 @@ def save_landmarks_to_csv(poses_folder, output_csv_folder):
                     writer.writerows(all_landmarks_data)
                 print(f"Saved CSV for {video_name} to {csv_output_path}")
 
-# if __name__ == '__main__':
-    # The main execution block for pose_estimator.py is typically for testing.
-    # In the main application, estimate_pose and save_landmarks_to_csv are called from main.py.
-    # If you need to test this script independently, uncomment and adjust the paths below.
-    # current_dir = os.path.dirname(__file__)
-    # project_root = os.path.abspath(os.path.join(current_dir, os.pardir))
-    
-    # frames_dir = os.path.join(project_root, 'frames', 'archery_4') # Example: specify a video's frame directory
-    # poses_dir = os.path.join(project_root, 'poses', 'archery_4') # Example: specify a video's pose directory
-
-    # os.makedirs(frames_dir, exist_ok=True)
-    # os.makedirs(poses_dir, exist_ok=True)
-
-    # estimate_pose(frames_dir, poses_dir)
-
-    # output_csv_dir = os.path.join(project_root, 'landmarks', 'csv_landmarks')
-    # save_landmarks_to_csv(poses_dir, output_csv_dir)
